@@ -29,5 +29,4 @@ The initial setup includes:
 
 ---
 
-## 📁 Directory Structure
 
