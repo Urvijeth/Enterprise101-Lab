@@ -12,6 +12,6 @@ This document outlines the steps followed to set up the virtual machines for the
 - **IPv6:** Disabled
 - All VMs are attached to this NAT network for internal communication.
 
-![NAT-netwok](../../assets/screenshot/nat network.avi)
+![NAT-netwok](../../assets/screenshot/natwork.avif)
 
 --

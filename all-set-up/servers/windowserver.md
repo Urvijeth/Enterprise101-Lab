@@ -55,7 +55,7 @@ Via **Server Manager** → *Add Roles and Features*:
   - Added `8.8.8.8` in DNS Manager → Server → Properties → **Forwarders**
 - Verified DNS and internet were **not working initially** due to network misconfiguration
 - ✅ **Fixed** by properly attaching VM to `project-x-network`
-
+![dns](../../assets/screenshot/DNS.jpg)
 ---
 ## ✅ DHCP Server Setup
 
@@ -81,6 +81,8 @@ We configured a DHCP server to assign dynamic IPs in the internal network `10.0.
 5. **Leave Other Settings Default**
    - No DNS or WINS changes required.
    - Finish the wizard.
+![ipaddress range](../../assets/screenshot/iprange.jpg)
+![router ip](../../assets/screenshot/routerip.jpg)
 
 ---
 
@@ -107,11 +109,9 @@ Created users in the domain `corp.project-x-dc.com` using ADUC.
 4. **Finish**
    - User account successfully added.
 
+![new user](../../assets/screenshot/newuser.jpg)
 ---
 
-## 🧾 Screenshot Path
-
-All screenshots are stored here:
 
 
 
