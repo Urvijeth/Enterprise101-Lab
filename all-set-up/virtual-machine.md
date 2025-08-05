@@ -11,9 +11,12 @@ This document outlines the steps followed to set up the virtual machines for the
 - **IPv4 Address:** `10.0.0.0/24`
 - **IPv6:** Disabled
 - All VMs are attached to this NAT network for internal communication.
+- DHCP Server
+- File and Storage Services
 
+5. **Leave Other Settings Default**
+   - No DNS or WINS changes required.
+   - Finish the wizard.
 
-![new user](../../assets/screenshot/newuser.jpg)
-
-
---
+![ipaddress range](assets/screenshot/iprange.jpg)  
+![router ip](assets/screenshot/routerip.jpg)
