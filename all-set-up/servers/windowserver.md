@@ -54,10 +54,61 @@ Via **Server Manager** → *Add Roles and Features*:
 - ✅ **Fixed** by properly attaching VM to `project-x-network`
 
 ---
+## ✅ DHCP Server Setup
 
-## ✅ Status
+We configured a DHCP server to assign dynamic IPs in the internal network `10.0.0.0/24`.
 
-- Windows Server is now a functional Domain Controller.
-- Network settings and DNS are working.
-- Ready for integration with client machines and security servers.
+### Steps:
+
+1. **Open Server Manager**
+   - Navigate to `Tools` → `DHCP`.
+
+2. **Create a New Scope**
+   - Expand `IPv4` → Right-click → `New Scope`.
+   - Scope Name: `project-x-scope`
+
+3. **Configure IP Address Range**
+   - **Start IP Address**: `10.0.0.100`
+   - **End IP Address**: `10.0.0.200`
+   - **Subnet Mask**: `255.255.255.0`
+
+4. **Router (Default Gateway)**
+   - Add: `10.0.0.1`
+
+5. **Leave Other Settings Default**
+   - No DNS or WINS changes required.
+   - Finish the wizard.
+
+---
+
+## 👤 Add User Accounts in Active Directory
+
+Created users in the domain `corp.project-x-dc.com` using ADUC.
+
+### Steps:
+
+1. **Open Active Directory Users and Computers**
+   - Navigate to `Server Manager` → `Tools` → `Active Directory Users and Computers`.
+
+2. **Add a New User**
+   - Right-click `Users` → `New` → `User`.
+   - Example user:
+     - **Name**: `John Doe`
+     - **Username**: `johnd`
+
+3. **Configure User Settings**
+   - Check: `User cannot change password`
+   - Set initial password as per project requirements (e.g. `@password123!`)
+   - Leave other settings default.
+
+4. **Finish**
+   - User account successfully added.
+
+---
+
+## 🧾 Screenshot Path
+
+All screenshots are stored here:
+
+
 
