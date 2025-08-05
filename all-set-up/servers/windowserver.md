@@ -33,7 +33,8 @@ Via **Server Manager** → *Add Roles and Features*:
 - File and Storage Services
 - Web Server (IIS)
 
-![Active Directory Setup](./assets/screenshot/servers.avif)
+![Active Directory Setup](../../assets/screenshot/servers.avif)
+
 
 ---
 

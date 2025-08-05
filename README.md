@@ -27,6 +27,4 @@ The initial setup includes:
 - **MailHog** – Fake mail server to simulate phishing vectors
 - **NAT Network** – Custom `10.0.0.0/24` network used by all VMs
 
----
-
 

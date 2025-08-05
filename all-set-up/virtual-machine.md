@@ -11,3 +11,7 @@ This document outlines the steps followed to set up the virtual machines for the
 - **IPv4 Address:** `10.0.0.0/24`
 - **IPv6:** Disabled
 - All VMs are attached to this NAT network for internal communication.
+
+![NAT-netwok](../../assets/screenshot/nat network.avi)
+
+--
