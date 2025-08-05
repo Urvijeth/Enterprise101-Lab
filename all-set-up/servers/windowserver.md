@@ -45,6 +45,8 @@ Via **Server Manager** → *Add Roles and Features*:
 - **Root Domain Name:** `corp.project-x-dc.com`
 - **NetBIOS Name:** `CORP`
 
+![add new forest](../../assets/screenshot/newforest.jpg)
+
 ---
 
 ### 🌐 DNS and Internet Connectivity
