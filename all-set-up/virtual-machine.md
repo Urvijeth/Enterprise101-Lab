@@ -13,7 +13,7 @@ This document outlines the steps followed to set up the virtual machines for the
 - All VMs are attached to this NAT network for internal communication.
 
 
-![router ip](../../assets/screenshot/natwork.avif)
+![new user](../../assets/screenshot/newuser.jpg)
 
 
 --
