@@ -28,7 +28,7 @@ To avoid Microsoft account sign-up:
      oobe\bypassnro
      ```
    - The VM will restart.
-![Bypass Microsoft Account](/assets/screenshot/)
+![Bypass Microsoft Account](/assets/screenshot/bypass.jpg)
 
 4. Proceed again with the language and region setup.
 
