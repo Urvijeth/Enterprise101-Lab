@@ -68,15 +68,50 @@ To avoid Microsoft account sign-up:
 
 - Windows 11 Workstation successfully installed and isolated from Microsoft sign-in.
 - Device is configured for enterprise network simulation in the home lab.
-- Ready to be joined to the domain or used for simulation tasks.
+- Ready to be joined to the domain 
+
+# Connect Windows 11 Enterprise (project-x-win-client) to Windows Domain Controller
+
+## Prerequisites
+- Ensure **Windows Server 2025** (`project-x-dc`) is running.
+- Domain: `corp.project-x-dc.com`
+- Domain Controller IP: `10.0.0.5`
 
 ---
 
-## 📸 Screenshots
+## Step 1: Set Static IP Address
+1. Open **Control Panel** (`Windows + X` → *Network and Sharing Center*).
+2. Select **Change adapter settings**.
+3. Right-click **Ethernet** → *Properties*.
+4. Select **Internet Protocol Version 4 (TCP/IPv4)** → *Properties*.
+5. Enter the following:
+   -IP address: 10.0.0.100
+   -Subnet mask: 255.255.255.0
+   -Default gateway: 10.0.0.1
+   -Preferred DNS server: 10.0.0.5
+6. Click **OK** and close the settings.
 
-> *(Optional: Add screenshots as needed for visual guidance. Place them under:)*  
-> `/Documents/HomeLab/Enterprise101-Lab/assets/screenshot/`  
-> Then reference in this file like:
-```markdown
+---
+
+## Step 2: Join the Domain
+1. Search for **Change workgroup name** in Windows search.
+2. Click **Change** in *System Properties*.
+3. Under **Member of**, select **Domain** and enter:corp.project-x-dc.com
+4. When prompted, enter:
+   -Username: johnd@corp.project-x-dc.com
+   -Password: @password123!
+5. A welcome message should appear:  
+![Bypass Microsoft Account](/assets/screenshot/adding.jpg)
+----
+
+**Welcome to the corp.project-x-dc.com domain**.
+6. Click **OK** and restart the computer.
+![Bypass Microsoft Account](/assets/screenshot/domainadded.jpg)
+---
+
+✅ **Result:** Windows 11 client `project-x-win-client` is successfully connected to the Windows Server 2025 domain.
+
+
+  
 
             
